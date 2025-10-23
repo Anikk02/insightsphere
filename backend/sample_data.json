@@ -1,0 +1,26 @@
+{
+  "users": [
+    { "name": "Admin", "email": "admin@insight.com", "password_plain": "admin123", "role": "admin" },
+    { "name": "Author One", "email": "author@insight.com", "password_plain": "author123", "role": "author" }
+  ],
+  "categories": [
+    { "name": "Politics", "slug": "politics", "image": "/images/cat-politics.jpg" },
+    { "name": "Culture", "slug": "culture", "image": "/images/cat-culture.jpg" },
+    { "name": "Travel", "slug": "travel", "image": "/images/cat-travel.jpg" },
+    { "name": "Entertainment", "slug": "entertainment", "image": "/images/cat-ent.jpg" }
+  ],
+  "posts": [
+    {
+      "title": "Global Economic Challenges and the Way Forward",
+      "slug": "global-economic-challenges",
+      "excerpt": "An in-depth analysis of current macroeconomic headwinds and policy options.",
+      "content": "<p>Full article content here...</p>",
+      "authorEmail": "author@insight.com",
+      "category": "Politics",
+      "tags": ["economy","policy"],
+      "image": "/images/politics-hero.jpg",
+      "featured": true,
+      "published": true
+    }
+  ]
+}

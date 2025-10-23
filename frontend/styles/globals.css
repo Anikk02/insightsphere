@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-gray-800 font-sans;
+}
+
+/*a {
+  @apply text-primary hover:text-red-600 transition-colors;
+}*/
+
+h1, h2, h3, h4 {
+  @apply font-bold text-dark;
+}
+
+/* Fix for password inputs */
+input[type="password"] {
+  color: #070707 !important;
+  background-color: #ffffff !important;
+  -webkit-text-fill-color: #000000 !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  -webkit-user-select: auto !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 1 !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+/* Also fix regular text inputs for consistency */
+input[type="text"],
+input[type="email"] {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  -webkit-text-fill-color: #000000 !important;
+}
+
+/* Ensure modal overlays everything */
+.fixed {
+  z-index: 9999 !important;
+}
