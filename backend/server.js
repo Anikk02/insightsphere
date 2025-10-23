@@ -38,15 +38,6 @@ app.get('/', (req, res) => {
   res.send('InsightSphere backend is running!');
 });
 
-// Add this to your server.js, app.js, or index.js
-app.get('/api/generate-hash', async (req, res) => {
-  try {
-    const hash = await bcrypt.hash('Aniket02082021@#', 12);
-    res.json({ hashedPassword: hash });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
 
 // Add to your server.js or routes
 app.get('/api/cloudinary-check', async (req, res) => {
